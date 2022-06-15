@@ -9,7 +9,7 @@ namespace AlgoExpert.Easy
     public class NonConstructibleChange
     {
         // Use a HasTable or HashSet in order to avoid using nested loops. This improves the performance of the system but uses more space
-        // Space Complexity - O(N)
+        // Space Complexity - O(NlogN)
         // Time Complexity - O(N)
         public int Change()
         {
@@ -23,7 +23,7 @@ namespace AlgoExpert.Easy
             int val = array[0];
 
 
-            while (i < array[array.Length -1])
+            while (i < array[array.Length - 1])
             {
                 set.Add(i, val);
 
@@ -47,22 +47,48 @@ namespace AlgoExpert.Easy
                     continue;
                 }
 
-                if (!array.Contains(set[i]) && sum + 1 > array[arrayCount+1])
+                if (!array.Contains(set[i]) && sum + 1 > array[arrayCount + 1])
                 {
                     change = set[i];
                     val += 1;
                 }
 
-                if (!array.Contains(set[i]) && sum + 1 < array[arrayCount+1])
+                if (!array.Contains(set[i]) && sum + 1 < array[arrayCount + 1])
                 {
                     change = sum + 1;
-                    Console.WriteLine($"{change.ToString()}", change.ToString());
                     break;
                 }
                 i++;
             }
 
             return change;
+        }
+
+        // Space = O(NlogN)
+        // Time = O(1)
+        public int ChangeAlgoExpert()
+        {
+            int[] array = new int[] { 5, 7, 1, 1, 2, 3, 22 };
+            Array.Sort(array);
+            int change = 0;
+            int currentChangeCreated = 0;
+
+            foreach (var coin in array)
+            {
+                if (coin > currentChangeCreated + 1)
+                {
+                    change = currentChangeCreated + 1;
+                    Console.WriteLine($"{change.ToString()}", change.ToString());
+                    return change;
+                }
+
+                currentChangeCreated += coin;
+            }
+
+            change = currentChangeCreated + 1;
+            Console.WriteLine($"{change.ToString()}", change.ToString());
+
+            return currentChangeCreated + 1;
         }
     }
 }
