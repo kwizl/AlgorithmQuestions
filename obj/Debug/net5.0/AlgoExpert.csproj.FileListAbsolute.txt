@@ -1,0 +1,16 @@
+D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.exe
+D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.deps.json
+D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.runtimeconfig.json
+D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.runtimeconfig.dev.json
+D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.dll
+D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\ref\AlgoExpert.dll
+D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.pdb
+D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.csproj.AssemblyReference.cache
+D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.AssemblyInfoInputs.cache
+D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.AssemblyInfo.cs
+D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.csproj.CoreCompileInputs.cache
+D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.dll
+D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\ref\AlgoExpert.dll
+D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.pdb
+D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.genruntimeconfig.cache
