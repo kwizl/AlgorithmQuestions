@@ -1,5 +1,6 @@
 ﻿using System;
 using AlgoExpert.Easy;
+using AlgoExpert.Medium;
 
 namespace AlgoExpert
 {
@@ -7,8 +8,9 @@ namespace AlgoExpert
     {
         static void Main(string[] args)
         {
-            NonConstructibleChange nonConstructibleChange = new NonConstructibleChange();
-            nonConstructibleChange.Change();
+            int[] array = { 2, 1, 2, 2, 2, 3, 4, 2 };
+            MoveElement moveElement = new MoveElement();
+            moveElement.ToEnd(array, 2);
         }
     }
 }
