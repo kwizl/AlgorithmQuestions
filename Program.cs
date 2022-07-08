@@ -8,9 +8,10 @@ namespace AlgoExpert
     {
         static void Main(string[] args)
         {
-            int[] array = { 2, 1, 2, 2, 2, 3, 4, 2 };
-            MoveElement moveElement = new MoveElement();
-            moveElement.ToEnd(array, 2);
+            int[] array = { 1, 2, 3, 3, 4, 0, 10, 6, 5, -1, -3, 2, 3 };
+
+            LongestPeak peak = new();
+            peak.AlgoPeak(array);
         }
     }
 }

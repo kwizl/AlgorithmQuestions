@@ -9,18 +9,14 @@ namespace AlgoExpert.Medium
     public class MoveElement
     {
         //O(n) - Time
-        //O(n) - Space
+        //O(1) - Space
         public int[] ToEnd(int[] arr, int target)
         {
-            Array.Sort(arr);
             int swap = 0;
             int len = arr.Length - 1;
             int idx = 0;
 
-            if (!arr.Contains(target))
-            {
-                throw new Exception("The array does not contain the target!");
-            }
+            if (!arr.Contains(target)) throw new Exception("The array does not contain the target!");
 
             for (int i = 0; i < arr.Length; i++)
             {

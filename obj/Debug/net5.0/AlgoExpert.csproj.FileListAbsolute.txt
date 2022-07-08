@@ -3,7 +3,6 @@ D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.deps.json
 D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.runtimeconfig.json
 D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.runtimeconfig.dev.json
 D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.dll
-D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\ref\AlgoExpert.dll
 D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\AlgoExpert.pdb
 D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\Data Structures.dll
 D:\Source\Repos\AlgoExpert\AlgoExpert\bin\Debug\net5.0\Data Structures.pdb
@@ -17,3 +16,4 @@ D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.dll
 D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\ref\AlgoExpert.dll
 D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.pdb
 D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\AlgoExpert.genruntimeconfig.cache
+D:\Source\Repos\AlgoExpert\AlgoExpert\obj\Debug\net5.0\refint\AlgoExpert.dll
