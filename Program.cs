@@ -8,10 +8,10 @@ namespace AlgoExpert
     {
         static void Main(string[] args)
         {
-            int[] array = { 1, 2, 3, 3, 4, 0, 10, 6, 5, -1, -3, 2, 3 };
+            int[] array = { 5, 1, 4, 2 };
 
-            LongestPeak peak = new();
-            peak.AlgoPeak(array);
+            ArrayProducts prod = new();
+            prod.AlgoProducts(array);
         }
     }
 }
