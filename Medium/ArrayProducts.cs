@@ -66,6 +66,10 @@ namespace AlgoExpert.Medium
 
             for (int i = 0; i < arr.Length; i++)
             {
+                string j = "5";
+                Int32 s = 0;
+                Int32.TryParse(j, out s);
+
                 products.Add(productLeft[i] * productRight[i]);
             }
 

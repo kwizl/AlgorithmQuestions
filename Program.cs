@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AlgoExpert.Easy;
 using AlgoExpert.Medium;
 
@@ -8,10 +9,13 @@ namespace AlgoExpert
     {
         static void Main(string[] args)
         {
-            int[] array = { 5, 1, 4, 2 };
+            int[] nums1 = { 1, 2 };
+            int[] nums2 = { -2, -1 };
+            int[] nums3 = { -1, 2 };
+            int[] nums4 = { 0, 2 };
 
-            ArrayProducts prod = new();
-            prod.AlgoProducts(array);
+            FourSumII fr = new();
+            fr.FourSumCount(nums1, nums2, nums3, nums4);
         }
     }
 }
