@@ -13,38 +13,41 @@ namespace AlgoExpert.Medium
         // [1, 2, 5, 7, 10, 13, 14, 15, 22]
         public BST Height(int[] arr)
         {
-            return ConstructMinHeightBST(arr, null, 0, arr.Length - 1);
+            return ConstructMinHeightBST(arr, 0, arr.Length - 1);
         }
 
-        public BST ConstructMinHeightBST(int[] arr, BST bst, int startIdx, int endIdx)
+        public BST ConstructMinHeightBST(int[] arr, int startIdx, int endIdx)
         {
             if (endIdx < startIdx)
             {
-                return bst;
+                return null;
             }
+
             int midIdx = (startIdx + endIdx) / 2;
+            BST bst = new BST(arr[midIdx]);
 
-            BST newBSTNode = new BST(arr[midIdx]);
-
-            if (bst == null)
-                bst = newBSTNode;
-            else
-            { 
-                if (arr[midIdx] < bst.Value)
-                {
-                    bst.Left = newBSTNode;
-                    bst = bst.Left;
-                }
-                else
-                {
-                    bst.Right = newBSTNode;
-                    bst = bst.Right;
-                }
-            }
-            ConstructMinHeightBST(arr, bst, startIdx, midIdx - 1);
-            ConstructMinHeightBST(arr, bst, midIdx + 1, endIdx);
+            bst.Left = ConstructMinHeightBST(arr, startIdx, midIdx - 1);
+            bst.Right = ConstructMinHeightBST(arr, midIdx + 1, endIdx);
 
             return bst;
+        }
+
+        public int KthLargest(BST root, int[] arr, int Kth)
+        {
+            int[] array = InOrderTraversal(root, arr);
+            Array.Sort(array.Distinct().ToArray());
+            return array[array.Length - (Kth - 1)];
+        }
+
+        public int[] InOrderTraversal(BST root, int[] arr)
+        {
+            if (root != null)
+            {
+                InOrderTraversal(root.Left, arr);
+                arr.Append(root.Value);
+                InOrderTraversal(root.Right, arr);
+            }
+            return arr;
         }
     }
 

@@ -9,13 +9,9 @@ namespace AlgoExpert
     {
         static void Main(string[] args)
         {
-            int[] nums1 = { 1, 2 };
-            int[] nums2 = { -2, -1 };
-            int[] nums3 = { -1, 2 };
-            int[] nums4 = { 0, 2 };
-
-            FourSumII fr = new();
-            fr.FourSumCount(nums1, nums2, nums3, nums4);
+            int[] arr = { 1, 12, 6, 5, 10, 9, 8, 15, 22 };
+            InsertionSort bst = new();
+            bst.Sort(arr);
         }
     }
 }
