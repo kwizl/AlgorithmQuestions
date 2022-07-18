@@ -8,7 +8,8 @@ namespace AlgoExpert.Easy
 {
     public class InsertionSort
     {
-
+        // O(n^2) - Time
+        // O(1) - Space
         public int[] Sort(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
