@@ -9,9 +9,9 @@ namespace AlgoExpert
     {
         static void Main(string[] args)
         {
-            int[] arr = { 1, 12, 6, 5, 10, 9, 8, 15, 22 };
-            InsertionSort bst = new();
-            bst.Sort(arr);
+            int[] arr = { 7, 1, 5, 3, 6, 4 };
+            BuySellStock bss = new();
+            bss.MaxProfit(arr);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace AlgoExpert.Easy
         // Time Complexity - O(N)
         public string Sum(int[] arr, int total)
         {             
-            HashSet<int> ht = new();            
+            HashSet<int> ht = new();
             var sumarr = new int[] { };
             foreach (var num in arr)
             {
@@ -21,7 +21,7 @@ namespace AlgoExpert.Easy
                     ht.Add(num);
                     continue;
                 }
-
+              
                 if (!ht.Contains(x) && (num * 2) != total)
                 {
                     ht.Add(num);
@@ -36,5 +36,24 @@ namespace AlgoExpert.Easy
             }
             return sumarr.ToString();
         }
+
+        //public bool IsPalindrome(string s)
+        //{
+        //    s = String.Concat(s.Where(c => !Char.IsWhiteSpace(c))).ToLower();
+        //    s = System.Text.RegularExpressions.Regex.Replace(s, "[^a-z]", "");
+
+        //    char[] t = s.ToCharArray();
+        //    Array.Reverse(t);
+        //    string v = t.ToString();
+
+        //    if (s == v)
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
     }
 }
