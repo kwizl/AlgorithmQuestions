@@ -9,9 +9,8 @@ namespace AlgoExpert
     {
         static void Main(string[] args)
         {
-            int[] arr = { 7, 1, 5, 3, 6, 4 };
-            BuySellStock bss = new();
-            bss.MaxProfit(arr);
+            ValidParenthesis vp = new ValidParenthesis();
+            vp.IsValid("){");
         }
     }
 }
